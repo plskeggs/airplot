@@ -26,7 +26,7 @@ stream_ids = tls.get_credentials_file()['stream_ids']
 stream_id = stream_ids[0]
 
 # Make instance of stream id object 
-stream_1 = go.Stream(
+stream_1 = go.scatter.Stream(
     token=stream_id,  # link stream id to 'token' key
     maxpoints=80      # keep a max of 80 pts on screen
 )
@@ -39,7 +39,7 @@ trace1 = go.Scatter(
     stream=stream_1         # (!) embed stream id, 1 per trace
 )
 
-data = go.Data([trace1])
+data = [trace1]
 
 # Add title to layout object
 layout = go.Layout(title='Time Series')
