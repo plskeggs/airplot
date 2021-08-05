@@ -15,8 +15,8 @@
 # zedjqolnfx
 
 import numpy as np
-import plotly.plotly as py
-import plotly.tools as tls
+import chart_studio.plotly as py
+import chart_studio.tools as tls
 import plotly.graph_objs as go
 
 # stream_ids = [u'otado15o61', u'n6hijlp47b', u'7nh82jg9qe', u'63r093ymbs', u'46dyjqvm0s', u'zedjqolnfx']
