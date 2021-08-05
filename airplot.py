@@ -20,6 +20,7 @@ import chart_studio.tools as tls
 import plotly.graph_objs as go
 
 # stream_ids = [u'otado15o61', u'n6hijlp47b', u'7nh82jg9qe', u'63r093ymbs', u'46dyjqvm0s', u'zedjqolnfx']
+tls.set_credentials_file(username='plskeggs', api_key='eddlcIONoLyfQTjQrhe9', stream_ids=[u'otado15o61', u'n6hijlp47b', u'7nh82jg9qe', u'63r093ymbs', u'46dyjqvm0s', u'zedjqolnfx'])
 stream_ids = tls.get_credentials_file()['stream_ids']
 
 # Get stream id from stream id list 
