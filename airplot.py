@@ -48,11 +48,13 @@ layout = go.Layout(title='Time Series')
 # Make a figure object
 fig = go.Figure(data=data, layout=layout)
 
+py.plot(data, filename = 'demo')
+
 # We will provide the stream link object the same token that's associated with the trace we wish to stream to
-s = py.Stream(stream_id)
+#s = py.Stream(stream_id)
 
 # We then open a connection
-s.open()
+#s.open()
 
 # (*) Import module keep track and format current time
 import datetime
@@ -71,12 +73,12 @@ while True:
     y = (np.cos(k*i/50.)*np.cos(i/50.)+np.random.randn(1))[0]
 
     # Send data to your plot
-    s.write(dict(x=x, y=y))
+    #s.write(dict(x=x, y=y))
 
     #     Write numbers to stream to append current data on plot,
     #     write lists to overwrite existing data on plot
 
     time.sleep(1)  # plot a point every second    
 # Close the stream when done plotting
-s.close()
+#s.close()
 
